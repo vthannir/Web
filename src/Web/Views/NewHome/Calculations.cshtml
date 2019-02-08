@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+<!-- Reference from: http://www.java2s.com/Tutorials/Javascript/Development/Math/Calculate_the_square_root_of_a_number_in_JavaScript.htm -->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form name=format>
+        Enter Number that you want to perform a squareroot
+        <input type="text" name="inp" size=10>
+        <input type="button" value="Calculate" onClick='doMath()'>
+        <br>
+        The square root of the given number is:
+        <input type="text" name="opt" size=20>
+    </form>
+</body>
+<head>
+    <script type="text/javascript">
+        function doMath() {
+            var input = document.format.inp.value;
+            var result = Math.sqrt(input);
+            document.format.opt.value = result;
+        }
+    </script>
+</head>
+</html>
