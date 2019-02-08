@@ -34,5 +34,10 @@ namespace Web.Controllers
         {
             return View();
         }
+        public IActionResult Calculations()
+        {
+            return View("Views/NewHome/Calculations.cshtml");
+        }
+
     }
 }
